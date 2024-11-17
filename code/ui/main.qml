@@ -100,6 +100,13 @@ KWin.TabBoxSwitcher {
                         }
                     }
 
+                    MouseArea {
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        onEntered: {
+                            icons.currentIndex = index;
+                        }
+                    }
                 }
 
                 highlight: KSvg.FrameSvgItem {
